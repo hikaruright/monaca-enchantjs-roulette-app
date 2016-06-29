@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Monacanoid</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <script type="text/javascript" src="js/enchant.min.08.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/gamemain.js"></script> 
+    <script type="text/javascript" src="js/planetselect.js"></script> 
+    <script type="text/javascript" src="js/roulette.js"></script> 
+    <script type="text/javascript" src="js/prizeContainer.js"></script> 
+    <script type="text/javascript" src="js/showPrize.js"></script> 
+    
+    <script type="text/javascript">
+        if (navigator.userAgent.indexOf('iPad') > 0) {
+            var initialScale = Math.round(window.screen.width * 10 / 800) / 10;
+            document.write('<meta name="viewport" content="width=800,maximum-scale=' + initialScale + ',minimum-scale=' + initialScale + ',user-scalable=no" />');
+        } else {
+            monaca.viewport({width : 800});
+        }
+    </script>
+<body onload="callinit();">
+</body>
+</html>

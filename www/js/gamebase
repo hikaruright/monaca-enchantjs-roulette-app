@@ -1,0 +1,9 @@
+
+var GameBase = enchant.Class.create({
+
+    initialize : function(){
+    },
+    
+    getImages : function(){
+    }
+});
